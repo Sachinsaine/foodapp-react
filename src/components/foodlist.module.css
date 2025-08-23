@@ -1,0 +1,8 @@
+.foodItemCont {
+  padding: 146px 100px 30px;
+  display: grid;
+  grid-template-rows: 10fr;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: 40px;
+}
