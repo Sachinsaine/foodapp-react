@@ -1,10 +1,15 @@
 import FoodItem from "./FoodItem";
 import styles from "./foodlist.module.css";
-export default function FoodList({ foodData }) {
+export default function FoodList({ foodData, setFoodData, setFoodId }) {
   return (
     <div className={styles.foodItemCont}>
       {foodData.map((food) => (
-        <FoodItem key={food.id} food={food} />
+        <FoodItem
+          key={food.id}
+          food={food}
+          setFood={setFoodData}
+          setFoodId={setFoodId}
+        />
       ))}
     </div>
   );
